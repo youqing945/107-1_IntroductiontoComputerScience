@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sensor">
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="74dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="282dp">
+
+            <ImageView
+                android:id="@+id/pmimage"
+                android:layout_width="wrap_content"
+                android:layout_height="281dp"
+                app:srcCompat="@drawable/a000" />
+
+            <TextView
+                android:id="@+id/DangerText"
+                android:layout_width="match_parent"
+                android:layout_height="282dp"
+                android:gravity="bottom|center_vertical"
+                android:text=" "
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtShow"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text=" "
+                android:textAlignment="center"
+                android:textSize="36sp" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="113dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="294dp">
+
+            <ListView
+                android:id="@+id/Show_B_List"
+                android:layout_width="match_parent"
+                android:layout_height="293dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteY="417dp">
+
+            <Button
+                android:id="@+id/btn_paired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SEARCH" />
+
+            <Button
+                android:id="@+id/btn_conn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CONNECT" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteY="478dp">
+
+            <TextView
+                android:id="@+id/DATE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Time: "
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
